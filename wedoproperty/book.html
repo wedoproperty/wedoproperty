@@ -1,0 +1,75 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26\fsmilli13333 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <meta name="description" content="Book Your Stay with We Do Property in Cape Town">\
+    <meta name="keywords" content="Cape Town, Short-Term Rentals, Book Online, Luxury Vacation Rentals">\
+    <title>Book Online | We Do Property</title>\
+    <link rel="stylesheet" href="styles.css">\
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">\
+</head>\
+<body>\
+    <header>\
+        <nav>\
+            <div class="logo">We Do Property</div>\
+            <ul>\
+                <li><a href="index.html">Home</a></li>\
+                <li><a href="about.html">About Us</a></li>\
+                <li><a href="gallery.html">Gallery</a></li>\
+                <li><a href="services.html">Our Services</a></li>\
+                <li><a href="book.html">Book Online</a></li>\
+                <li><a href="agents.html">Estate Agents</a></li>\
+                <li><a href="contact.html">Contact</a></li>\
+            </ul>\
+        </nav>\
+    </header>\
+\
+    <section id="book">\
+        <h2>Book Your Stay</h2>\
+        <p>Reserve your luxury rental in Cape Town. We\'92ll confirm availability and send a payment link.</p>\
+        <form name="booking" method="POST" data-netlify="true">\
+            <input type="hidden" name="form-name" value="booking">\
+            <input type="text" name="name" placeholder="Your Name" required>\
+            <input type="email" name="email" placeholder="Your Email" required>\
+            <input type="text" name="check-in" placeholder="Check-In Date" id="check-in" required>\
+            <input type="text" name="check-out" placeholder="Check-Out Date" id="check-out" required>\
+            <select name="property" required>\
+                <option value="" disabled selected>Select a Property</option>\
+                <option value="Sea Point Villa">Sea Point Villa</option>\
+                <option value="Blouberg Apartment">Blouberg Apartment</option>\
+                <!-- Add 9 more property options via Netlify CMS -->\
+            </select>\
+            <textarea name="message" placeholder="Additional Requests (e.g., number of guests)"></textarea>\
+            <button type="submit" class="btn">Submit Booking Request</button>\
+        </form>\
+        <p>After submission, we\'92ll send a payment link via Stripe or PayPal to <strong>book@wedoproperty.co.za</strong>.</p>\
+        <div class="hostaway-placeholder">\
+            <p>Real-time booking coming soon via Hostaway. Contact us for availability.</p>\
+        </div>\
+    </section>\
+\
+    <footer>\
+        <p>\'a9 2025 We Do Property. All rights reserved.</p>\
+        <div class="social-links">\
+            <a href="#" target="_blank">Facebook</a>\
+            <a href="#" target="_blank">Instagram</a>\
+            <a href="#" target="_blank">Twitter</a>\
+        </div>\
+        <p>WhatsApp: <a href="https://wa.me/+27815725069">+27 81 572 5069</a> | Email: <a href="mailto:info@wedoproperty.co.za">info@wedoproperty.co.za</a></p>\
+    </footer>\
+\
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>\
+    <script src="script.js"></script>\
+</body>\
+</html>\
+}

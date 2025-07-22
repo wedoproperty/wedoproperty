@@ -1,0 +1,54 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26\fsmilli13333 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 backend:\
+  name: git-gateway\
+  branch: main\
+collections:\
+  - name: "pages"\
+    label: "Pages"\
+    files:\
+      - file: "index.html"\
+        label: "Home"\
+        name: "home"\
+        fields:\
+          - \{ label: "Title", name: "title", widget: "string" \}\
+          - \{ label: "Description", name: "description", widget: "text" \}\
+      - file: "about.html"\
+        label: "About Us"\
+        name: "about"\
+        fields:\
+          - \{ label: "Hands Free Hosting", name: "hands_free", widget: "text" \}\
+          - \{ label: "Our Story", name: "story", widget: "text" \}\
+          - \{ label: "Team Members", name: "team", widget: "list", fields: [\{ label: "Name", name: "name", widget: "string" \}, \{ label: "Role", name: "role", widget: "string" \}, \{ label: "Image", name: "image", widget: "image" \}] \}\
+      - file: "services.html"\
+        label: "Our Services"\
+        name: "services"\
+        fields:\
+          - \{ label: "Services Content", name: "services_content", widget: "text" \}\
+      - file: "agents.html"\
+        label: "Estate Agents"\
+        name: "agents"\
+        fields:\
+          - \{ label: "Agents Content", name: "agents_content", widget: "text" \}\
+  - name: "gallery"\
+    label: "Gallery"\
+    folder: "images"\
+    create: true\
+    fields:\
+      - \{ label: "Property Name", name: "property", widget: "string" \}\
+      - \{ label: "Images", name: "images", widget: "list", fields: [\{ label: "Image", name: "image", widget: "image" \}]\}\
+  - name: "social"\
+    label: "Social Media"\
+    file: "social.json"\
+    fields:\
+      - \{ label: "Facebook", name: "facebook", widget: "string" \}\
+      - \{ label: "Instagram", name: "instagram", widget: "string" \}\
+      - \{ label: "Twitter", name: "twitter", widget: "string" \}\
+}

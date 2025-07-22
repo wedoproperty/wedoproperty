@@ -1,0 +1,193 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26\fsmilli13333 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 * \{\
+    margin: 0;\
+    padding: 0;\
+    box-sizing: border-box;\
+\}\
+\
+body \{\
+    font-family: 'Lora', serif;\
+    line-height: 1.6;\
+    color: #333;\
+\}\
+\
+header \{\
+    background: #1A73E8; /* Sea blue */\
+    color: #fff;\
+    padding: 1rem;\
+    position: fixed;\
+    width: 100%;\
+    top: 0;\
+    z-index: 1000;\
+\}\
+\
+nav \{\
+    display: flex;\
+    justify-content: space-between;\
+    align-items: center;\
+    max-width: 1200px;\
+    margin: 0 auto;\
+\}\
+\
+nav .logo \{\
+    font-family: 'Montserrat', sans-serif;\
+    font-size: 1.8rem;\
+    font-weight: bold;\
+\}\
+\
+nav ul \{\
+    display: flex;\
+    list-style: none;\
+\}\
+\
+nav ul li \{\
+    margin-left: 2rem;\
+\}\
+\
+nav ul li a \{\
+    color: #fff;\
+    text-decoration: none;\
+    font-family: 'Montserrat', sans-serif;\
+    font-size: 1rem;\
+\}\
+\
+nav ul li a:hover \{\
+    color: #F28C38; /* Sunset orange */\
+\}\
+\
+section \{\
+    padding: 5rem 1rem;\
+    max-width: 1200px;\
+    margin: 0 auto;\
+    text-align: center;\
+\}\
+\
+#home \{\
+    background: linear-gradient(to right, #F4E4BC, #F28C38); /* Sandy beige to sunset orange */\
+    padding-top: 7rem;\
+\}\
+\
+h1 \{\
+    font-family: 'Montserrat', sans-serif;\
+    font-size: 2.8rem;\
+    margin-bottom: 1rem;\
+    color: #1A73E8;\
+\}\
+\
+h2 \{\
+    font-family: 'Montserrat', sans-serif;\
+    font-size: 2rem;\
+    margin-bottom: 1.5rem;\
+    color: #1A73E8;\
+\}\
+\
+p \{\
+    max-width: 800px;\
+    margin: 0 auto 1rem;\
+\}\
+\
+.btn \{\
+    display: inline-block;\
+    padding: 0.75rem 1.5rem;\
+    background: #1A73E8;\
+    color: #fff;\
+    text-decoration: none;\
+    border-radius: 5px;\
+    margin-top: 1rem;\
+    transition: background 0.3s;\
+\}\
+\
+.btn:hover \{\
+    background: #F28C38;\
+\}\
+\
+.gallery-grid, .team-grid, .services-grid, .agents-grid \{\
+    display: grid;\
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\
+    gap: 2rem;\
+    margin-top: 2rem;\
+\}\
+\
+.gallery-grid img, .team-grid img \{\
+    width: 100%;\
+    border-radius: 5px;\
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);\
+\}\
+\
+form \{\
+    display: flex;\
+    flex-direction: column;\
+    max-width: 500px;\
+    margin: 2rem auto;\
+\}\
+\
+form input, form textarea, form select \{\
+    padding: 0.75rem;\
+    margin-bottom: 1rem;\
+    border: 1px solid #ccc;\
+    border-radius: 5px;\
+    font-size: 1rem;\
+\}\
+\
+form textarea \{\
+    resize: vertical;\
+    min-height: 100px;\
+\}\
+\
+form button \{\
+    background: #1A73E8;\
+    color: #fff;\
+    border: none;\
+    padding: 0.75rem;\
+    cursor: pointer;\
+    border-radius: 5px;\
+\}\
+\
+form button:hover \{\
+    background: #F28C38;\
+\}\
+\
+footer \{\
+    background: #1A73E8;\
+    color: #fff;\
+    text-align: center;\
+    padding: 1rem;\
+\}\
+\
+footer .social-links a \{\
+    color: #fff;\
+    margin: 0 1rem;\
+    text-decoration: none;\
+\}\
+\
+footer .social-links a:hover \{\
+    color: #F28C38;\
+\}\
+\
+@media (max-width: 768px) \{\
+    nav ul \{\
+        flex-direction: column;\
+        gap: 1rem;\
+    \}\
+\
+    nav ul li \{\
+        margin-left: 0;\
+    \}\
+\
+    h1 \{\
+        font-size: 2rem;\
+    \}\
+\
+    h2 \{\
+        font-size: 1.5rem;\
+    \}\
+\}\
+}
