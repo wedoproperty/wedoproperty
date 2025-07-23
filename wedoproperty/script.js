@@ -1,24 +1,14 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2513
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+// Auth0 Setup (for login on book page, etc.)
+const auth0Config = { // Load from config.yml, but for static, hardcoded or env
+    domain: 'dev-3gpg45y4fuh1kr87.eu.auth0.com',
+    clientId: 'N6PirF2OiBwPPEYQQkMbyKoMcdiIp60t',
+    audience: 'https://wedoproperty.co.za/api'
+};
+// Use Auth0 SDK
+const auth0 = new auth0.WebAuth(auth0Config); // Add <script src="https://cdn.auth0.com/js/auth0/9.26.5/auth0.min.js"></script> in head if needed
+// Example: auth0.login({}) for booking auth - expand as needed
 
-\f0\fs26\fsmilli13333 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 // Initialize flatpickr for booking form\
-document.addEventListener('DOMContentLoaded', () => \{\
-    flatpickr('#check-in', \{ dateFormat: 'Y-m-d' \});\
-    flatpickr('#check-out', \{ dateFormat: 'Y-m-d' \});\
-\});\
-\
-// Basic form submission handling (logs to console for demo)\
-document.querySelectorAll('form').forEach(form => \{\
-    form.addEventListener('submit', (e) => \{\
-        e.preventDefault();\
-        console.log('Form submitted!');\
-        alert('Thank you for your submission! We will contact you soon.');\
-    \});\
-\});\
-}
+// Other JS, e.g., form validation
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('Site loaded');
+});
