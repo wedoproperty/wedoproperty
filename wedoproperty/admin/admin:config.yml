@@ -47,6 +47,5 @@ collections:
       - { label: "Twitter", name: "twitter", widget: "string" }
 
 
-      Add admin/config.yml with Auth0 settings
 
 
