@@ -1,1 +1,51 @@
+backend:
+  name: auth0
+  client_id: N6PirF2OiBwPPEYQQkMbyKoMcdiIp60t
+  domain: dev-3gpg45y4fuh1kr87.eu.auth0.com
+  audience: https://wedoproperty.co.za/api
+  scope: openid profile email
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Home"
+        name: "home"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+      - file: "about.html"
+        label: "About Us"
+        name: "about"
+        fields:
+          - { label: "Hands Free Hosting", name: "hands_free", widget: "text" }
+          - { label: "Our Story", name: "story", widget: "text" }
+          - { label: "Team Members", name: "team", widget: "list", fields: [{ label: "Name", name: "name", widget: "string" }, { label: "Role", name: "role", widget: "string" }, { label: "Image", name: "image", widget: "image" }] }
+      - file: "services.html"
+        label: "Our Services"
+        name: "services"
+        fields:
+          - { label: "Services Content", name: "services_content", widget: "text" }
+      - file: "agents.html"
+        label: "Estate Agents"
+        name: "agents"
+        fields:
+          - { label: "Agents Content", name: "agents_content", widget: "text" }
+  - name: "gallery"
+    label: "Gallery"
+    folder: "images"
+    create: true
+    fields:
+      - { label: "Property Name", name: "property", widget: "string" }
+      - { label: "Images", name: "images", widget: "list", fields: [{ label: "Image", name: "image", widget: "image" }]}
+  - name: "social"
+    label: "Social Media"
+    file: "social.json"
+    fields:
+      - { label: "Facebook", name: "facebook", widget: "string" }
+      - { label: "Instagram", name: "instagram", widget: "string" }
+      - { label: "Twitter", name: "twitter", widget: "string" }
+
+
+
 
